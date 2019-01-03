@@ -25,7 +25,6 @@ const mapDispatchToProps = (dispatch) => ({
   onChangeSequencer: (evt) => {
     dispatch(changeSequencer(evt.target.value))
     if (evt !== undefined && evt.preventDefault) evt.preventDefault();
-    dispatch(changeArguments(''));
 
   },
   onClickNext: (evt) => {
